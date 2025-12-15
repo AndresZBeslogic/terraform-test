@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npx serve dist -s -l 8080",
     "web": "expo start --web",
-    "build": "npx expo export:web",
+    "build": "npx expo export --platform web --output-dir dist",
     "azure-build": "npm install && npm run build",
     "postinstall": "npm run build"
   },
